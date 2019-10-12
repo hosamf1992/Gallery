@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PSD 2 HTML - Grid ex!</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
-<body>
+<body onload="renderImgs()">
 
     <header>
         <section class="container header-wrapper flex align-center">
@@ -32,7 +34,7 @@
                         <a href="#">Contact</a>
                     </li>
                 </ul>
-                <button class="toggle-menu-btn fa" onclick="toggleMenu()" alt="Open main menu"></button>
+                <button class="toggle-menu-btn fa1" onclick="toggleMenu()" alt="Open main menu"></button>
                 <div class="toggle-menu-screen screen" onclick="toggleMenu()" alt="toggle main menu"></div>
             </nav>
 
@@ -71,11 +73,33 @@
 
             <div class="second-panel">
                 <div class="image images-wrapper grid">
-                    <div class="image image-item1 "></div>
-                    <div class="image image-item2 "></div>
-                    <div class="image image-item3 "></div>
+<!-- 
+                    <div class="image image-item1 "> </div>
+                        
+                    <div class="image image-item2 ">  </div>
+                    <div class="image image-item3 "></div> -->
+
+                   
+
+
+
+
+
+
+                    <div class="logos-footer flex">
+                        <div> <a href="#" class="fa fa-facebook"></a></div>
+                        <div><a href="#" class="fa fa-twitter"></a></div>
+                        <div class="fa fa-be"> <img src="logos/be.png" /></div>
+                        <div> <a href="#" class="fa fa-dribbble"></a></div>
+
+
+
+                    </div>
+
                 </div>
+
             </div>
+
 
         </section>
 
@@ -98,14 +122,10 @@
 
 
     </footer>
+    <script src="js/utils.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/controller.js"></script>
 
-    <script>
-        function toggleMenu() {
-            var mainMenu = document.getElementById('mainMenu');
-            console.log(mainMenu);
-            mainMenu.classList.toggle('open');
-        }
-    </script>
 </body>
 
 </html>
